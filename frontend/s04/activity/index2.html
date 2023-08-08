@@ -1,1 +1,52 @@
-index2.html
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>s04 Activity Output 2</title>
+</head>
+<body>
+	<h2>Contact Form</h2>
+	<main>
+		<form action="index.html" method="post">
+			<label for="first_name">First Name:</label><br>
+			<input type="text" name="first_name" id="first_name" required><br>
+
+			<label for="last_name">Last Name:</label><br>
+			<input type="text" name="last_name" id="last_name" required><br>
+
+			<label for="email_detail">Email:</label><br>
+			<input type="email" name="email_detail" id="email_detail" required><br>
+
+			<label for="contact_number">Contact Number:</label><br>
+			<input type="number" name="contact_number" id="contact_number" required><br>
+
+			<label for="service_type">Service Type:</label><br>
+					<select name="service_type" id="service_type">
+						<option value="Front End Programming">Front End Programming</option>
+						<option value="Back End Programming">Back End Programming</option>
+						<option value="Full Stack Programming">Full Stack Programming</option>
+					</select><br><br>
+
+			<label>Preferred Contact:</label><br>
+					<input type="checkbox" name="contact" id="contact1" value="email">
+					<label for="email">Email</label><br>
+
+					<input type="checkbox" name="contact" id="contact2" value="Phone">
+					<label for="contact2">Phone</label><br><br>
+
+			<label>Package:</label><br>
+					<input type="radio" name="package" id="package1" value="Basic">
+					<label for="package1">Yes</label><br>
+					<input type="radio" name="package" id="package2" value="Premium">
+					<label for="package2">No</label><br><br>
+
+			<label for="message">Message:</label><br>
+					<textarea name="message" rows="5" id="message"></textarea><br><br>
+
+			<button>Send Inquiry</button><br>
+			<button type="reset">Reset</button>
+		</form>
+	</main>
+</body>
+</html>
