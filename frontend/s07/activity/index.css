@@ -111,5 +111,27 @@ nav .nav, nav .nav-logo{
 	margin-left: 0.5rem;
 	margin-right: 0.5rem;
 	
+}
 
+#pre-footer{
+	padding: 1rem;
+	color: white;
+	background-color: #002540;
+}
+#pre-footer div{
+	display: inline-block;
+	width: 20%;
+}
+
+#pre-footer div p{
+	margin-top: 0.3rem;
+	margin-bottom: 0.3rem;
+}
+footer{
+	padding: 0.7rem;
+}
+
+footer span{
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
 }
