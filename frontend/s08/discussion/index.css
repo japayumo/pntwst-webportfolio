@@ -1,0 +1,178 @@
+/*CSS Reset*/
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+h2,h3,h4{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#div-3{
+	background-color: greenyellow;
+	border:2px solid black;
+	height: 200px;
+	width: 200px;
+	display: inline;
+}
+
+#div-4{
+	background-color: yellowgreen;
+	border:2px solid black;
+	height: 200px;
+	width: 200px;
+	display: inline;
+}
+
+#span-3{
+	background-color: gray;
+	/*shorthand of the command below*/
+	border: 2px solid black;
+
+	/*border-width: 2px;
+	border-style: solid;
+	border-color: blue;*/
+
+	display: block;
+	height: 200px;
+	width: 200px;
+}
+
+#span-4{
+	background-color: gray;
+	border: 2px solid black;
+	display: block;
+	height: 200px;
+	width: 200px;
+}
+
+/*---------------------*/
+#span-5{
+	background: fuchsia;
+	border: 2px solid black;
+	display: inline-block;
+	height: 300px;
+	width: 300px;
+}
+
+#span-6{
+	background: mistyrose;
+	border: 2px solid black;
+	display: inline-block;
+	height: 300px;
+	width: 300px;
+}
+
+#div-5{
+	background-color: lightblue;
+	border: 2px solid black;
+	display: inline-block;
+	height: 300px;
+	width: 300px;
+}
+
+#div-6{
+	background-color: chocolate;
+	border: 2px solid black;
+	display: inline-block;
+	height: 300px;
+	width: 300px;
+}
+
+/*---------------------*/
+#div-7{
+	background-color: aquamarine;
+	border: 2px solid black;
+}
+
+#div-8{
+	background-color: lightgreen;
+	border: 2px solid black;
+	display: none;
+}
+
+#span-7{
+	background-color: seagreen;
+	display: none;
+}
+
+.box{
+	background-color: tomato;
+	border: 1px solid black;
+	margin: 5px;
+}
+
+.fifty-percent{
+	width: 50%;
+}
+
+.one-hundred-pixels{
+	width: 100px;
+}
+
+.fifty-vw{
+	width: 50vw;
+}
+
+.twenty-five-vh{
+	height: 25vh;
+}
+
+.parent{
+	width: 135px;
+	border: 2px solid navy;
+	font-size: 30px;
+}
+
+/*------------------------*/
+.one-rem{
+	font-size: 1rem;
+}
+
+.one-em{
+	font-size: 1em;
+}
+
+.two-rem{
+	font-size: 2rem;
+}
+
+.two-em{
+	font-size: 2em;
+}
+
+.two-hundred-percent{
+	font-size: 200%;
+}
+
+/*--------------CSS Background Properties-----------------*/
+
+.background{
+	min-height: 100vh;
+	background-image: url("https://c4.wallpaperflare.com/wallpaper/43/1003/707/anime-your-name-kimi-no-na-wa-mitsuha-miyamizu-wallpaper-preview.jpg");
+	background-repeat: no-repeat;
+	/*background-size: 100vw*/
+	background-size: 100%;
+	/*This CSS property is used to define horizontal and vertical postioining of a bg
+	within its container element*/
+	background-position: center top;
+	background-attachment: fixed;
+	/*This CSS property determines whether a bg image scrolls with the content or remains fixed
+	in a place as the content is scrolled*/
+}
+
+.container-bg{
+	background-color: rgba(0, 0, 0, 0.5);
+	min-height: 100vh;
+}
+
+.bg-title{
+	color: white;
+	font-size: 5em;
+	margin: 0;
+	line-height: 35rem;
+	text-align: center;
+}
+
