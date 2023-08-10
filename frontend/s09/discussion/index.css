@@ -1,0 +1,37 @@
+/*CSS Reset*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*=====Float property====*/
+.img-float{
+	width: 250px;
+	height: 250px;
+	float: inherit;
+}
+
+.parent-element{
+	background-color: skyblue;
+	padding: 50px 10px;	/*padding: (top&bottom)px (left&right)px*/
+	position: relative;
+	height: 800px;
+}
+
+.child-one{
+	background-color: gray;
+	padding: 10px;
+}
+
+.child-two{
+	background-color: yellow;
+	padding: 10px;
+	position: sticky;
+	top: 0px;
+}
+
+.child-three{
+	background-color: gray;
+	padding: 10px;
+}
