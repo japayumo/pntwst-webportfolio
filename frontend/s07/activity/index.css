@@ -1,0 +1,115 @@
+/*CSS Reset*/
+*{
+	margin:0;
+	padding:0;
+	/*It tells the browser to include an element's padding and border within 
+	its specified width and height. Without this, padding and borders can add 
+	to the size of a element, making things look messy*/
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+/*1 rem = 16px (default font size)*/
+/*navigation bar*/
+nav{
+	/*shorthand*/
+	padding: 0.8rem;
+
+	/*long method*/ /*done when custom size is needed*/
+	/*padding-top: 0.8rem;
+	padding-bottom: 0.8rem;
+	padding-left: 0.8rem;
+	padding-right: 0.8rem;*/
+
+	margin-bottom: 2rem;
+	border-bottom: 1px solid gray;
+
+	/*list-style-type: none;*/
+}
+
+nav > ul{
+	list-style-type: none;
+}
+
+/*margin vs padding*/
+/*margin is best when creating space between elements*/
+/*padding is best when creating space between 
+element's border and it's contents*/
+
+/*Descendant selector*/
+nav .nav, nav .nav-logo{
+	display: inline;
+	margin: 0.5rem;
+}
+
+/*intro section*/
+#intro{
+	padding-top: 2rem;
+	padding-bottom: 3em;
+	padding-left: 10%;
+	padding-right: 10%;
+	text-align: center;
+}
+
+.header{
+	text-align: center;
+}
+
+/*descendant selector*/
+#intro h2, #intro p{
+	margin-bottom: 1rem;
+}
+
+/*descendant selector*/
+#intro button{
+	/*font color*/
+	color: white;
+
+	/*changes the thickness of text*/
+	font-weight: bold;
+	background-color: #c2195b;
+	border-radius: 25px;
+	font-size: 1rem;
+
+	/*create space between the button text and the border*/
+	padding: 1rem;
+}
+
+/*succeed info section*/
+#succeed-info{
+	padding-top: 2rem;
+	padding-bottom: 3em;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+#succeed-info h2{
+	margin-bottom: 1rem;
+}
+#succeed-info h3{
+	text-align: center;
+	margin-top: 2rem;
+	/*creates space betweem the h3 tags and the paragraph tags*/
+	margin-bottom: 1rem;
+}
+
+#succeed-info .card{
+
+	/*allows the cards to appera beside each other*/
+	/*background-color: gray;*/
+	display: inline-block;
+
+	/*used to align elements with the tallest inline elements*/
+	vertical-align: top;
+	min-height: 150px;
+	
+	width: 30%;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	
+
+}
