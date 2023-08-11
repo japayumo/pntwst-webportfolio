@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Positioning Example</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+
+  .container {
+    position: relative;
+    width: 650px;
+    height: 5000px;
+    margin: 20px auto;
+    background-color: lightgray;
+  }
+
+  /* red box */
+  .static-box {
+    width: 220px;
+    height: 220px;
+    padding: 20px;
+    background-color: #EC7063 ;
+
+    position: static;
+    top: 0px;
+    left: 0px;
+  }
+
+  /* green box */
+  .absolute-box {
+	/* relative to its nearest ancestor / parent 	*/
+    width: 220px;
+    height: 220px;
+    padding: 20px;
+    background-color: #A9DFBF  ;
+    
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+
+  /* yellow box */
+  .relative-box {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    padding: 20px;
+    background-color: #F7DC6F;
+    top: 0px;
+    left: 0px;
+  }
+
+  /* blue box */
+  .fixed-box {
+  	/* relative to the browser window 	*/
+  	background-color: #3498DB;
+    width: 220px;
+    height: 220px;
+    padding: 20px;
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+  }
+
+  /* sticky box */
+  .sticky-box {
+    width: 220px;
+    height: 220px;
+    background-color: #A569BD;
+    padding: 20px;
+
+    position: sticky;
+    top: 0px;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+  	Container
+    <div class="static-box">
+    	<strong>Static </strong><br> 
+    	top: 0; <br> 
+    	Document flow
+    </div>
+    <div class="absolute-box">
+    	<strong>Absolute</strong><br>
+    	top: 0px; left 0px;<br>
+    	The top and left of the parent
+    </div>
+    <div class="relative-box">
+    	<strong>Relative</strong><br>
+    	top: 0px; left 0px;<br>
+    	top 0 and left 0 is its normal position with the document flow.
+    	Absolute is not in the document flow because its positioning follows the parent, not the document
+    </div>
+    <div class="fixed-box">
+    	<strong>Fixed</strong><br>
+    	top: 0px; left: 0px; <br>
+    	top and left of the browser's window</div>
+    <div class="sticky-box"><strong>Sticky</strong><br>
+    	top: 0; left 0; <br>
+    	top and left from its normal position and top and left of the browser's window</div>
+  </div>
+</body>
+</html>

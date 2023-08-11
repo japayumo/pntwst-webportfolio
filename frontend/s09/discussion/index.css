@@ -35,3 +35,41 @@
 	background-color: gray;
 	padding: 10px;
 }
+
+/*-------------------*/
+.container{
+	position: relative;
+}
+
+.black-box{
+	position: relative;
+	border: 2px solid black;
+	height: 100px;
+	margin: 30px;
+	
+	z-index: 1;
+}
+
+.gray-box{
+	position: absolute;
+	/*border: 2px solid black;*/
+	background: lightgray;
+	height: 60px;
+	width: 70%;
+	top: 50px;
+	left: 50px;
+	
+	z-index: 3;/*gray box will be above both green and black box*/
+}
+
+.green-box{
+	position: absolute;
+	/*border: 2px solid black;*/
+	background: lightgreen;
+	width: 35%;
+	top: -15px;
+	left: 270px;
+	height: 100px;
+
+	z-index: 2;/*green box will be above black box*/
+}

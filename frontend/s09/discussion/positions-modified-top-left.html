@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Positioning Example</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+
+  .container {
+    position: relative;
+    width: 650px;
+    height: 5000px;
+    margin: 20px auto;
+    background-color: lightgray;
+  }
+
+  .static-box {
+    width: 220px;
+    height: 220px;
+    padding: 20px;
+    background-color: #EC7063 ;
+
+    position: static;
+    top: 50px;
+  }
+
+  .absolute-box {
+	/* relative to its nearest ancestor / parent 	*/
+    width: 220px;
+    height: 220px;
+    padding: 20px;
+    background-color: #A9DFBF  ;
+    
+    position: absolute;
+    top: 50px;
+    left:300px;
+  }
+
+  
+  .relative-box {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    padding: 20px;
+    background-color: #F7DC6F;
+    top: 50px;
+  }
+
+  .fixed-box {
+  	/* relative to the browser window 	*/
+  	background-color: #3498DB;
+    width: 220px;
+    height: 220px;
+    padding: 20px;
+
+    position: fixed;
+    top: 50px;
+    left: 0px;
+  }
+
+  
+  .sticky-box {
+    width: 220px;
+    height: 220px;
+    background-color: #A569BD;
+    padding: 20px;
+
+    position: sticky;
+    top: 50px;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+  	Container
+    <div class="static-box">
+    	<strong>Static </strong><br> 
+    	top: 50px; <br> 
+    	Positioned as its order in the document. <strong>Top, left, right, and bottom properties have no effect. </strong> 
+    </div>
+    <div class="absolute-box">
+    	<strong>Absolute</strong><br>
+    	top: 50px; left 300px: 
+    	Relative to its parent element (nearest ancestor)
+    </div>
+    <div class="relative-box">
+    	<strong>Relative</strong><br>
+    	top: 50px;<br>
+    	Relative to its normal position
+    </div>
+    <div class="fixed-box">
+    	<strong>Fixed</strong><br>
+    	top: 50px;
+    	left: 0px; <br>
+    	Relative to its normal position</div>
+    <div class="sticky-box"><strong>Sticky</strong><br>
+    	top: 50px; <br>
+    	Combination of both position: relative; and position: fixed; 
+    Relative to normal position (relative) and stucks to specific postion of the window (fixed) once it reaches a specified scroll position, which in this context top:50px; </div>
+  </div>
+</body>
+</html>

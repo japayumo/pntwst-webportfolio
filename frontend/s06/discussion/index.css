@@ -19,6 +19,16 @@ h1{
 	font-size: 2rem;
 }
 
+div{
+	float: right;
+}
+
+.img-float{
+	width: 250px;
+	height: 250px;
+	float: right;
+}
+
 html{
 	scroll-behavior: smooth;
 }
