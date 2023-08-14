@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bootstrap Grid and Flexbox Example</title>
+<!-- Include Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <h2>Grid Layout Example</h2>
+    <div class="row g-2">
+      <div class="col-md-4">
+        <div class="p-3 bg-light m-start">1</div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-3 bg-light">2</div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-3 bg-light m-end">3</div>
+      </div>
+    </div>
+
+    <h2 class="mt-4">Flexbox Layout Example</h2>
+    <div class="d-flex justify-content-between">
+      <div class="p-3 bg-success m-start">1</div>
+      <div class="p-3 bg-success">2</div>
+      <div class="p-3 bg-success m-end">3</div>
+    </div>
+  </div>
+
+  <!-- Include Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

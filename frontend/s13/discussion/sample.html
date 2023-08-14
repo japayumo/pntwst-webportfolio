@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid and Flexbox Example</title>
+<style>
+  /* Styling for the Grid container */
+  .grid-container {
+    display: grid; /* Use the grid layout */
+    grid-template-columns: 1fr 1fr 1fr; /* Create three equal-width columns */
+    grid-gap: 10px; /* Gap of 10px between grid items */
+    margin-bottom: 20px; /* Add a bottom margin for spacing */
+  }
+
+  /* Styling for grid items */
+  .item {
+    background-color: lightblue; /* Light blue background color */
+    padding: 20px; /* 20px padding inside the grid items */
+    text-align: center; /* Center align text content */
+  }
+
+  /* Styling for the Flexbox container */
+  .flex-container {
+    display: flex; /* Use the flexbox layout */
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+    margin-bottom: 20px; /* Add a bottom margin for spacing */
+  }
+
+  /* Styling for flex items */
+  .item-flex {
+    background-color: lightgreen; /* Light green background color */
+    padding: 20px; /* 20px padding inside the flex items */
+    text-align: center; /* Center align text content */
+  }
+</style>
+</head>
+<body>
+  <h2>Grid Layout Example</h2>
+  <div class="grid-container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+
+  <h2>Flexbox Layout Example</h2>
+  <div class="flex-container">
+    <div class="item-flex">1</div>
+    <div class="item-flex">2</div>
+    <div class="item-flex">3</div>
+    <div class="item-flex">1</div>
+    <div class="item-flex">2</div>
+    <div class="item-flex">3</div>
+    <div class="item-flex">1</div>
+    <div class="item-flex">2</div>
+    <div class="item-flex">3</div>
+  </div>
+</body>
+</html>
