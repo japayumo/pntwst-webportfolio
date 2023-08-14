@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<title>Bootstrap - Flex</title>
+</head>
+
+<body>
+
+	<div class="text-center">
+		<h1>Bootstrap - Flex</h1>
+		<p>Use d-flex class to create a flex container and transform direct children into flex items.</p>
+		<!-- We use d-flex to align elements/child elements inside -->
+		<!-- With the use of flexbox, designing or layouting is easier even without using float or positioning. -->
+
+		<h1>Centering Elements</h1>
+		<h2>Flex Column</h2>
+		<div style="height: 500px;" class="bg-secondary p-3 d-flex flex-column justify-content-center align-items-center">
+			<div class="h-25 p-3 bg-success">Flex Item A</div>
+			<div class="h-25 p-3 bg-warning">Flex Item B</div>
+			<div class="h-25 p-3 bg-danger">Flex Item C</div>
+		</div>
+		<!-- justify-content-center - centers the contents along the main axis -->
+		<!-- align-items-center - center the contents along the cross axis -->
+
+		<h2>Flex Row</h2>
+		<div class="bg-secondary p-3 d-flex flex-row align-items-center">
+			<div class="p-3 bg-success">Flex Item A</div>
+			<div class="p-3 bg-warning">Flex Item B</div>
+			<div class="p-3 bg-danger">Flex Item C</div>
+		</div>
+
+		<h2>Flex Row</h2>
+		<div class="bg-secondary p-3 d-flex justify-content-center align-items-center">
+			<div class="p-3 bg-success">Flex Item A</div>
+			<div class="p-3 bg-warning">Flex Item B</div>
+			<div class="p-3 bg-danger">Flex Item C</div>
+		</div>
+
+		<h2>Flex Row Reverse</h2>
+		<div class="bg-secondary p-3 d-flex flex-row-reverse align-items-center">
+			<div class="p-3 bg-success">Flex Item A</div>
+			<div class="p-3 bg-warning">Flex Item B</div>
+			<div class="p-3 bg-danger">Flex Item C</div>
+		</div>
+
+		<h2>Creating Space Between Elements</h2>
+		<div class="bg-secondary p-3 d-flex justify-content-around">
+			<div class="p-3 bg-success">Flex Item A</div>
+			<div class="p-3 bg-warning">Flex Item B</div>
+			<div class="p-3 bg-danger">Flex Item C</div>
+		</div>
+
+		<h2>Flexbox with Margin</h2>
+		<div class="bg-secondary p-3 d-flex justify-content-around">
+			<div class="p-3 bg-info mr-auto">Logo</div>
+			<div class="p-3 bg-success">Flex Item A</div>
+			<div class="p-3 bg-warning">Flex Item B</div>
+			<div class="p-3 bg-danger">Flex Item C</div>
+		</div>
+		
+		<h2>Nested Flex Elements</h2>
+		<div class="bg-dark p-3 d-block d-md-flex">
+			<div class="p-3 bg-success mr-auto">Flex Item A</div>
+
+			<div class="w-50 d-block d-md-flex justify-content-between">
+				<div class="p-3 bg-warning">Flex Item B.1</div>
+				<div class="p-3 bg-danger">Flex Item B.2</div>
+				<div class="p-3 bg-primary">Flex Item B.3</div>
+			</div>
+
+		</div>
+
+
+		<div class="mt-5 mb-5 d-block d-md-flex justify-content-around ml-3 mr-3">
+			<div class="col-12 col-md-4 text-center">
+				<img class="img-fluid" src="images/blue.png">
+				<p>I'm a blue photo</p>
+			</div>
+
+			<div class="col-12 col-md-4 text-center">
+				<img class="img-fluid" src="images/red.png">
+				<p>I'm a red photo</p>
+			</div>
+
+			<div class="col-12 col-md-4 text-center">
+				<img class="img-fluid" src="images/green.png">
+				<p>I'm a green photo</p>
+			</div>
+
+		</div>
+
+		
+		<div class="mt-2 container-fluid d-flex flex-row flex-md-column">
+			<!-- container w/ blue contents -->
+			<div class="text-center">
+				<img width="150" class="mr-3 mb-3" src="images/blue.png">
+				<img width="150" class="mr-3 mb-3" src="images/blue.png">
+				<img width="150" class="mr-3 mb-3" src="images/blue.png">
+				<img width="150" class="mr-3 mb-3" src="images/blue.png">
+			</div>
+		
+			<!-- container w/ green contents -->
+			<div class="text-center">
+				<img width="150" class="mr-3 mb-3" src="images/green.png">
+				<img width="150" class="mr-3 mb-3" src="images/green.png">
+				<img width="150" class="mr-3 mb-3" src="images/green.png">
+				<img width="150" class="mr-3 mb-3" src="images/green.png">
+			</div>
+
+		</div>
+	
+	</div>
+
+
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+</body>
+</html>
