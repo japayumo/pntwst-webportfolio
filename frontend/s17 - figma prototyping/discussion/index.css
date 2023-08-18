@@ -1,0 +1,157 @@
+/*CSS Reset*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#logo{
+	color: #003363;
+	font-family: Montserrat;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: 24px; /* 100% */
+}
+
+nav a{
+	color: #004E84 !important;
+	font-family: Montserrat;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px; /* 150% */
+}
+
+#landing{
+	background: 
+		linear-gradient( 
+			rgba(0, 34, 65, 0.61),
+			rgba(0, 34, 65, 0.61)
+		),
+		url("./images/landing.png")
+	;
+		
+	background-repeat: no-repeat;
+	background: cover;
+
+}
+	
+#title{
+	color: var(--gs-brand-white, #FFF);
+	text-align: center;
+	font-family: Montserrat;
+	font-size: 68px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 84px; /* 123.529% */
+	margin-top: 10rem;
+}
+
+#base{
+
+	/*Text CSS style*/
+	color: #FFF;
+	text-align: center;
+	font-family: Montserrat;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 24px; /* 150% */
+
+	
+
+	/*Border CSS style*/
+	display: inline-flex;
+	padding: 8px 24px;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+
+	border-radius: 2px;
+	background: #12C6FF;
+}
+
+/*-----------------------------------------------*/
+#about{
+	background: #003363;
+
+}
+
+#text-title{
+	color: #12C6FF;
+	font-family: Montserrat;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 32px; /* 133.333% */
+}
+
+/*------------------------------------------------*/
+#contact{
+	background-color: #003363;
+}
+
+#contact-image{
+	background: 
+		linear-gradient(
+			rgba(0, 34, 65, 0.61),
+			rgba(0, 34, 65, 0.61)
+		),
+
+		url("./images/building.png");
+		background-repeat: no-repeat;
+		background: cover;
+}
+
+#social-header{
+	color: #FFF;
+	text-align: center;
+	font-family: Montserrat;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 24px; /* 100% */
+
+	margin-top: 320px;
+}
+
+#contact-header{
+	color: #12C6FF;
+	font-family: Montserrat;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 32px; /* 100% */
+}
+
+#contact-text{
+	color: #FFF;
+	font-family: Montserrat;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 30px; /* 125% */
+}
+
+#form-box{
+	color: #FFF;
+	font-family: Montserrat;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+
+
+/*-------------------------------------*/
+#footer{
+	color: #003363;
+	text-align: center;
+	font-family: Montserrat;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 24px; /* 184.615% */
+}

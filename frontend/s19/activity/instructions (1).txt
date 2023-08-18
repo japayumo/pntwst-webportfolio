@@ -1,0 +1,36 @@
+========
+Activity
+========
+*/
+
+// Note: Copy the code from activity-template.js into the batch Boodle Notes so students can copy the template of the code for this activity.
+
+/*
+## Instructions that can be provided to the students for reference:
+1. In the S19 folder, create an activity folder, an index.html file inside of it and link the index.js file.
+2. Create an index.js file and console log the message Hello World to ensure that the script file is properly associated with the html file.
+3. Copy the activity code from your Boodle Notes. Paste the activity code from your Boodle Notes to your index.js file.
+4. Create the following variables to store to the following user details:
+
+        Variable Name - Value Data Type:
+
+        -firstName - String
+        -lastName - String
+        -age - Number
+        -hobbies - Array
+        -workAddress - Object
+        
+5. The hobbies array should contain at least 3 hobbies as Strings.
+6. The work address object should contain the following key-value pairs:
+    - houseNumber: <value>
+    - street: <value>
+    - city: <value>
+    - state: <value>
+7. Log the values of each variable to follow/mimic the output.
+8. Identify and implement the best practices of creating and using variables by avoiding errors and debugging the following codes. 
+9. Log the values of each variable to follow/mimic the output.
+10. Create a git repository named backend.
+11. Initialize your local backend folder as a local repository, add the remote link and push to git with the commit message of Add activity code s15.
+12. Add the link in Boodle for s15.
+
+*/
