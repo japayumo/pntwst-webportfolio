@@ -51,3 +51,4 @@ console.log("My bestfriend is: " + fullName2);
 const lastLocation = "Arctic Ocean";
 /*lastLocation = "Atlantic Ocean";*/
 console.log("I was found frozen in: " + lastLocation);
+
