@@ -82,10 +82,10 @@ console.log(divideNum(50, 10));
 
 function getCircleArea(radius){
 	const pi = 3.1416;
-	let radExponent = radius ** 2;
-	let circleArea = pi * radExponent;
+	let circleArea = pi * (radius ** 2);
 	console.log("The result of getting the area of a circle with " + radius + " radius:");
 	return circleArea;
+	// return Math.PI * (Math.pow (radius, 2)); // Other solution c/o Dude
 };
 console.log(getCircleArea(15));
 
@@ -127,6 +127,16 @@ function checkIfPassed(yourScore, totalScore){
 };
 
 console.log(isPassingScore);
+
+// More efficient solution 
+
+/*function checkIfPassed(score, total){
+	console.log(`Is ${score}/${total} a passing score?`);
+	return ((score/total)) * 100 >= 75;
+};
+
+console.log(checkIfPassed(38,50));*/
+
 
 //Do not modify
 //For exporting to test.js
