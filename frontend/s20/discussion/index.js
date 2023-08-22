@@ -261,3 +261,59 @@ let helloWorld2 = function(){
 	}
 
 	displayCarInfo();
+
+	console.log("--------------------------");
+
+	// Named function
+
+	// Function declaration
+	// "function" keyword
+	//getDivisibility - name of the function
+	// { } - code block (function scope)
+
+	function getDivisibility(){
+		// Declaration and initialization
+		let numA = 10; // let - values can be reassigned
+		const numB = 2; // values are constant/cannot be reassigned
+		let remainder = (numA % numB);
+		console.log("Remainder of 10/2: " + remainder);
+
+		const divisibility = 0
+		let isDivisible = (divisibility == remainder);
+		let output = "Is 10 divisibile by 2? " + isDivisible;
+
+		// console.log(`Is ${numA} divisible by ${numB}: ${isDivisible}`); // Shortcut c/o Eliot
+
+
+		// return keyword
+		return output;
+		
+	}
+
+
+
+	// Invocation / Call
+
+	getDivisibility();
+
+	console.log("--------------------------");
+
+	// Function Expression
+
+	let divisibilityFunc = function(){
+		let numA = 10; // let - values can be reassigned
+		const numB = 2; // values are constant/cannot be reassigned
+		let remainder = (numA % numB);
+		// console.log("Remainder of 10/2: " + remainder);
+
+		const divisibility = 0
+		let isDivisible = (divisibility == remainder);
+		let output = "Is 10 divisibile by 2? " + isDivisible;
+		return output;
+	};
+
+	divisibilityFunc();
+
+
+
+	
