@@ -1,0 +1,47 @@
+
+# Activity
+
+**Note**: Copy the code from activity-template.js into the batch Boodle Notes so students can copy the template of the code for this activity.
+
+## Instructions
+
+1. In the s25 folder, create an activity folder, an index.html file inside of it and link the index.js file.
+2. Create an index.js file and console log the message Hello World to ensure that the script file is properly associated with the html file.
+3. Copy the activity code and instructions from your Boodle Notes into your index.js.
+
+    - **Important note**: Don't pass the users array as an argument to the function. The functions must be able to manipulate the current users array.
+
+4. Create a function which is able to receive a single argument and add the input at the end of the users array.
+    - function should be able to receive a single argument.
+    - add the input data at the end of the array.
+    - The function should not be able to return data.
+    - invoke and add an argument to be passed in the function.
+    - log the users array in the console.
+5. Create a function which is able to receive an index number as a single argument return the item accessed by its index.
+    - function should be able to receive a single argument.
+    - return the item accessed by the index.
+    - Create a global variable called outside of the function called itemFound and store the value returned by the function in it.
+        - log the itemFound variable in the console.
+6. Create a function which is able to delete the last item in the array and return the deleted item.
+    - create a function scoped variable to store the last item in the users array.
+    - shorten the length of the array by at least 1 to delete the last item.
+    - return the last item in the array which was stored in the function scoped variable.
+    - create a global scoped variable outside of the function and store the result of the function.
+    - log the global scoped variable in the console.
+7. Create a function which is able to update a specific item in the array by its index.
+    - function should be able to receive 2 arguments, the update and the index number.
+    - first, access and locate the item by its index then re-assign the item with the update.
+    - this function should not have a return.
+    - invoke the function and add the update and index number as arguments.
+    - outside of the function, log the users array in the console.
+8. Create a function which is able to delete all items in the array.
+    - you can modify/set the length of the array.
+    - the function should not return anything.
+    - invoke the function.
+    - outside of the function, Log the users array in the console.
+9. Create a function which is able to check if the array is empty.
+    - add an if statement to check if the length of the users array is greater than 0.
+    - if it is, return false.
+    - else, return true.
+    - create a global variable called outside of the function  called isUsersEmpty and store the returned value from the function.
+        - log the isUsersEmpty variable in the console.
