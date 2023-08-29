@@ -61,12 +61,14 @@ let addPostForm = document.querySelector('#form-add-post').addEventListener('sub
 	// event.preventDefault() is preventing the browser from performing its default action, which in the context of a form submission, would be to refresh the page.
 	event.preventDefault();
 
-	fetch("https://jsonplaceholder.typicode.com/posts", {
+
+
+	fetch("https://jsonplaceholder.typicode.com/posts/", {
 		method: 'POST', 
 		body: JSON.stringify({
 			title: document.querySelector('#txt-title').value,
 			body: document.querySelector('#txt-body').value,
-			userID: 101
+			userID: `${id}`
 		}),
 		headers: {'Content-Type': 'application/json'}
 	})
@@ -101,8 +103,10 @@ function editPost(id){
 document.querySelector('#form-edit-post').addEventListener('submit', (e) => {
     e.preventDefault();
 
+let id = document.querySelector('#txt-edit-id').value
+
     //PUT is the value of method this time because the action to be done is editing/updating.
-    fetch('https://jsonplaceholder.typicode.com/posts/1', {
+    fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
         method: 'PUT',
         body: JSON.stringify({
             id: document.querySelector('#txt-edit-id').value,
@@ -119,16 +123,16 @@ document.querySelector('#form-edit-post').addEventListener('submit', (e) => {
 
 
         // values
-        let id = document.querySelector('#txt-edit-id').value
-        let title = document.querySelector('#txt-edit-title').value
-        let body = document.querySelector('#txt-edit-body').value
+        
+        //let title = document.querySelector('#txt-edit-title').value
+        //let body = document.querySelector('#txt-edit-body').value
 
-        document.querySelector(`#post-${data.id}`).innerHTML = id;
-        document.querySelector(`#post-title-${data.id}`).innerHTML = title;
-        document.querySelector(`#post-body-${data.id}`).innerHTML = body;
+        
+        document.querySelector(`#post-title-${data.id}`).innerHTML = document.querySelector('#txt-edit-title').value;
+        document.querySelector(`#post-body-${data.id}`).innerHTML = document.querySelector('#txt-edit-body').value;
 
 
-        document.querySelector('#txt-edit-id').value = null;
+        
         document.querySelector('#txt-edit-title').value = null;
         document.querySelector('#txt-edit-body').value = null;
         document.querySelector('#btn-submit-update').setAttribute('disabled', true);
