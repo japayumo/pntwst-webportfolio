@@ -1,0 +1,13 @@
+﻿
+
+Instructions that can be provided to the students for reference: Activity:
+1. Create a new Java project named activity.
+2. Declare the following variables to store the user's information:
+- firstName - String
+- lastName - String -firstSubject - Double
+- secondSubject - Double
+- thirdSubject - Double
+3. Instantiate a new Scanner object.
+4. Print out messages asking for the user's input and gather them using the Scanner methods.
+5. Get the average of the user's input printed out as an integer value.
+6. Print out a message that will display the user's full name and the average grade.
