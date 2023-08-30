@@ -40,23 +40,19 @@ public class Main {
         System.out.println("Current Users:");
         ArrayList<HashMap> userDetails = new ArrayList<>(Arrays.asList(userName,userName2));
         System.out.println(userDetails);
+        int length = userDetails.size();
 
         int userIndex;
         Scanner userScanner = new Scanner(System.in);
 
         System.out.println("What user id would you like to view the details?");
         userIndex = userScanner.nextInt();
-        System.out.println(userDetails.get(userIndex-1));
-        /*if(userIndex >= 0 || userIndex < userDetails.length()){
+        if(userIndex >= 0 && userIndex < length){
             System.out.println(userDetails.get(userIndex-1));
         }
         else{
             System.out.println("User is not in database");
-        }*/
-
-
+        }
 
     }
-
-
 }
