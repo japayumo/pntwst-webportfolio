@@ -1,0 +1,15 @@
+
+1. Create a new Java project named activity.
+2. Create an array of the following fruits and print it in the console:
+- apple
+- avocado
+- banana
+- kiwi
+- orange
+3. Create a new instance of the Scanner class and ask the user which fruit they would like the index of.
+- Make sure that the information is filtered even if the user input is capitalized and includes spaces.
+4. Print out a message informing the user of the index number of the fruit they are looking for.
+5. Create two HashMaps of users with the following details:
+- firstName - String
+- lastName - String
+6. Create an Array List of Users then add the user Hash Maps to it.
