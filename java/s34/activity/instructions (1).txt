@@ -1,0 +1,17 @@
+
+Activity:
+1. Create a new Java project named activity.
+2. Create a runErrors function that will take the user's input to generate the different commonly encountered exceptions: - Error 1:
+System.out.println(47/0);
+- Error 2:
+String myString = null;
+System.out.println(myString.length());
+- Error 3:
+String myOtherString = "hello";
+System.out.println(Integer.parseInt(myOtherString));
+- Error 4:
+String[] myWords = {"Hello", "World"};
+System.out.println(myWords[2]);
+3. Create a Try-Catch Statement that will handle the thrown exceptions from the run Errors function.
+4. Create a user defined exception named NewException.
+5. Implement the NewException in the main and runErrors function.

@@ -35,35 +35,19 @@ public class Main {
 
         for (String character : userArray){
             if(character.contains(searchTerm)){
-                    filteredUser.add(character);
+                filteredUser.add(character);
             }
         }
         // if(!(searchTerm.isBlank())){
-            if(filteredUser.size() == 0){
-                System.out.println("No character found");
-            }
-            else{
-                System.out.println("The following users were found: ");
-                System.out.println(filteredUser);
-            }
-
-
-
-
+        if(filteredUser.size() == 0){
+            System.out.println("No character found");
+        }
+        else{
+            System.out.println("The following users were found: ");
+            System.out.println(filteredUser);
+        }
 
         /* End of Array List*/
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
 
