@@ -1,0 +1,7 @@
+Activity:
+1. Create a new Java project named activity.
+2. Create a conditional statement that will check the user's input if it's a leap year.
+3. Create variables to contain an Array List of users, an empty Array List of filtered users and a search term.
+4. Print out a message asking a user for a string and printing out the list of users.
+5. Create a while loop that will take in the user's input.
+6. Create a conditional statement and a loop that will check the users array for the string provided by the user.  
