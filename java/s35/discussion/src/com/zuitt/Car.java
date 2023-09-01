@@ -63,6 +63,7 @@ public class Car {
         return this.owner;
     }
 
+
     // Setters
     public void setName(String name){
         this.name = name;
@@ -71,7 +72,7 @@ public class Car {
     public void setBrand(String brand){
         this.brand = brand;
     }
-    public void setManufacturedDate(int ManufacturedData){
+    public void setManufacturedDate(int manufacturedDate){
         this.manufacturedDate = manufacturedDate;
     }
 

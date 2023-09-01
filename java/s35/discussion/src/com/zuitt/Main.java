@@ -65,7 +65,20 @@ public class Main {
     Test defaultAccess = new Test();
     defaultAccess.accessingDefault();
 
+    //Protected protectedAccess = new Protected();
+    //protectedAccess.printProtectedMessage();
 
+    // The "extends" keyword allow to create a parent-child class relationship (or base class-sub class), relationship between the "Example" and "Protected" class
+    // The "extends" keyword inherits all the properties and methods of the "Example" class and sends it to the "Protected" class
+    /*public static class Protected extends Example{
+        public void printProtectedMessage(){
+            System.out.println(protectedMessage);
+        }
+    }*/
+
+    //accessModifier.privateMessage;
+    accessModifier.printPrivateMessage(); // This message is private
 
     } // void main
 } // Main
+

@@ -1,0 +1,10 @@
+
+1. Create a new Java project named activity.
+2. Create a User class with the following details:
+- First Name
+- Last Name
+- Email
+- Contact Number
+- Id (read only)
+- Introduce and provide Contact methods.
+3. Instantiate two User objects and invoke the introduce and provideContact methods that will print out messages with their names and contact details.
