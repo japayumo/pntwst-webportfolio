@@ -61,9 +61,11 @@ public class Main {
 
     } // void main
 
-public static void useCalculator (Calculator calculator){
+public static void useCalculator(Calculator calculator){
         calculator.compute("64", "32", "add");
         calculator.turnOff();
+
+
 }
     /*public static void describePet(String name, String gender, String classification, int age){
         System.out.println(name + " is a " + gender + " " + classification + " who is " + age + " years old.");

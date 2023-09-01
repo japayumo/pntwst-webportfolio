@@ -1,0 +1,12 @@
+
+1. Create a new Java project named activity.
+2. Create a Cellphone interface that will implement the following:
+- sendText(message, recipient)
+- playMusic(songName)
+3. Create a Nokia and Samsung class that will both implement the Cellphone Interface.
+4. Instantiate objects from both classes and invoke their methods.
+5. Create a Camera interface that will implement the following:
+- takePicture
+- takeVideo
+6. Implement the Camera interface in the Samsung class.
+7. Invoke the additional Samsung methods.
