@@ -11,4 +11,8 @@ public class StartUpCompany {
     public StartUpCompany(AdminStaff adminStaff){
         this.adminStaff = adminStaff;
     }
+
+    public void getSortPaperTask(AdminStaff adminStaff){
+        adminStaff.sortPapers();
+    }
 }

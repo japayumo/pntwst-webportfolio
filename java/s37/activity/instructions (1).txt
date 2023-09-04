@@ -1,0 +1,11 @@
+
+1. Create a new Java project named activity.
+2. Create a User class the following properties and methods:
+- name
+- joinDate
+- isAdmin
+- login
+- checkout
+3. Create an Admin class inheriting from the User class with an additional property of role and addProduct method. 4. Instantiate an Admin object and invoke it's methods.
+5. Create a Premium and Regular class and override it's login and checkout methods.
+6. Instantiate Premium and Regular objects and invoke their methods.
