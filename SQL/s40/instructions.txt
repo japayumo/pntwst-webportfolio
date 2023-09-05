@@ -1,0 +1,11 @@
+1. Create an activity folder and a solution.sql file inside of it.
+2. Given the following data, provide the answer to the following:
+a. List the books Authored by Marjorie Green.
+b. List the books Authored by Michael O'Leary.
+C. Write the author/s of "The Busy Executives Database Guide".
+d. Identify the publisher of "But Is It User Friendly?".
+e.List the books published by Algodata Infosystems.
+4. Create a database design an and ERD for an airline reservation system using Google drawings. Create tables for the following:
+a. Users
+b. Bookings
+c. Flights
