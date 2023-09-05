@@ -23,7 +23,7 @@ public class Database {
         this.firstName = firstName;
     }
 
-    public String getLastNamestName(){
+    public String getLastName(){
         return lastName;
     }
     public void setLastName(String lastName){
@@ -43,8 +43,11 @@ public class Database {
     public void setAddress(String address){
         this.address = address;
     }
+    // end of getters and setters
 
-    public void addContact(){
-        System.out.println("Contact successfully created");
+    public boolean contains(String searchTerm) {
+        searchTerm = searchTerm.toLowerCase();
+        return firstName.toLowerCase().contains(searchTerm) || lastName.toLowerCase().contains(searchTerm) || contactNumber.toLowerCase().contains(searchTerm) || address.toLowerCase().contains(searchTerm);
     }
+
 }
